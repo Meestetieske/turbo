@@ -4,7 +4,10 @@
   "private": true,
   "exports": {
     "./card": "./src/card.tsx",
-    "./code": "./src/code.tsx"
+    "./code": "./src/code.tsx",
+    "./test": "./src/test.tsx",
+    "./tailwind": "./src/tailwind/",
+    "./Button": "./src/components/atoms/Button/index.tsx"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
@@ -12,10 +15,11 @@
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
+    "@repo/tailwind": "*",
     "@repo/typescript-config": "*",
     "@turbo/gen": "^1.10.12",
-    "@types/node": "^20.5.2",
     "@types/eslint": "^8.44.7",
+    "@types/node": "^20.5.2",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "eslint": "^8.53.0",
