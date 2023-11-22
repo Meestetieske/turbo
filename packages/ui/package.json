@@ -3,11 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
-    "./card": "./src/card.tsx",
-    "./code": "./src/code.tsx",
-    "./test": "./src/test.tsx",
-    "./tailwind": "./src/tailwind/",
-    "./Button": "./src/components/atoms/Button/index.tsx"
+    "./Button": "./src/components/atoms/Button/index.tsx",
+    "./Logo": "./src/components/atoms/Logo/index.tsx",
+    "./Header": "./src/components/organisms/Header/index.tsx"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",

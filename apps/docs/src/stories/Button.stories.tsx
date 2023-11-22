@@ -9,7 +9,6 @@ export default {
   title: "Atoms/Button",
   parameters: {
     darkMode: {
-      // Set the initial theme
       current: "light",
     },
   },

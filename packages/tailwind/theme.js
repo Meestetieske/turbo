@@ -10,7 +10,7 @@ export default {
     succes: colors.green,
     warning: colors.orange,
     error: colors.red,
-    text: colors.slate["700"],
+    defaultText: "#4a5568",
   },
   fontFamily: {
     sans: ["Mulish", "ui-sans-serif", "system-ui"],

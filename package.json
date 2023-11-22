@@ -2,6 +2,7 @@
   "name": "turbo",
   "private": true,
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
@@ -13,14 +14,10 @@
     "@repo/eslint-config": "*",
     "@repo/typescript-config": "*",
     "autoprefixer": "^10.4.16",
+    "clsx": "^2.0.0",
     "prettier": "^3.1.0",
     "tailwind-variants": "^0.1.18",
     "tailwindcss": "^3.3.5",
     "turbo": "latest"
-  },
-  "packageManager": "npm@10.1.0",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+  }
 }
