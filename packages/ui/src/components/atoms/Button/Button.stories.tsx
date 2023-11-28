@@ -2,11 +2,11 @@ import type { ComponentProps } from "react";
 import type { Meta, StoryFn } from "@storybook/react";
 
 // import { userEvent, within } from '@storybook/testing-library';
-import Button from "@repo/ui/Button";
+import Button from ".";
 
 export default {
   component: Button,
-  title: "Atoms/Button",
+  title: "ui/atoms/Button",
   parameters: {
     darkMode: {
       current: "light",

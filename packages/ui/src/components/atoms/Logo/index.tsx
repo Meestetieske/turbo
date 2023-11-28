@@ -1,7 +1,8 @@
 import { tv } from "tailwind-variants";
 
-interface LogoProps {
+export interface LogoProps {
   hasText?: boolean;
+  hasHoverEffect?: boolean;
   mode?: "dark" | "light";
 }
 
@@ -24,7 +25,11 @@ const logoClasses = tv({
   },
 });
 
-const Logo = ({ hasText = true, mode = "light" }: LogoProps) => {
+const Logo = ({
+  hasText = true,
+  mode = "light",
+  hasHoverEffect = false,
+}: LogoProps) => {
   const width = hasText ? "656.667" : "175.333";
   const viewBox = `0 0 ${width} 175.333`;
 
@@ -34,7 +39,7 @@ const Logo = ({ hasText = true, mode = "light" }: LogoProps) => {
       viewBox={viewBox}
       width={width}
       xmlns="http://www.w3.org/2000/svg"
-      className="logo"
+      className="c-logo w-auto h-12 group"
       aria-label="Divotion company logo"
     >
       <title>Divotion logo {hasText ? "with text" : ""}</title>
@@ -55,18 +60,20 @@ const Logo = ({ hasText = true, mode = "light" }: LogoProps) => {
           </g>
         </>
       )}
-      <path
-        d="m54.575 60.164-35.204 97.747 20.061-3.537 28.272-78.518z"
-        fill="#00bce4"
-      />
-      <path
-        d="m149.208 116.865-20.111 3.678-62.403 11.003-7.009 19.257 82.584-14.562 20.214-3.564z"
-        fill="#5d6c77"
-      />
-      <path
-        d="m69.074 21.355-7.113 19.54 53.998 63.964 20.214-3.565z"
-        fill="#2dc84d"
-      />
+      <g>
+        <path
+          d="m54.575 60.164-35.204 97.747 20.061-3.537 28.272-78.518z"
+          fill="#00bce4"
+        />
+        <path
+          d="m149.208 116.865-20.111 3.678-62.403 11.003-7.009 19.257 82.584-14.562 20.214-3.564z"
+          fill="#5d6c77"
+        />
+        <path
+          d="m69.074 21.355-7.113 19.54 53.998 63.964 20.214-3.565z"
+          fill="#2dc84d"
+        />
+      </g>
     </svg>
   );
 };

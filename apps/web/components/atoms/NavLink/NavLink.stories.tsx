@@ -2,23 +2,24 @@ import type { ComponentProps } from "react";
 import type { Meta, StoryFn } from "@storybook/react";
 
 // import { userEvent, within } from '@storybook/testing-library';
-import Header from "@repo/ui/Header";
+import NavLink from ".";
 
 export default {
-  component: Header,
-  title: "organisms/Header",
+  component: NavLink,
+  title: "web/atoms/NavLink",
   parameters: {
     darkMode: {
-      // Set the initial theme
       current: "light",
     },
   },
-  args: {},
-  argTypes: {},
-} as Meta<typeof Header>;
+  args: {
+    children: "Home",
+    href: "#",
+  },
+} as Meta<typeof NavLink>;
 
-const Template: StoryFn<ComponentProps<typeof Header>> = (args) => (
-  <Header {...args} />
+const Template: StoryFn<ComponentProps<typeof NavLink>> = (args) => (
+  <NavLink {...args} />
 );
 
 export const Default = Template.bind({});

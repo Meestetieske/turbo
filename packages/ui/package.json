@@ -4,8 +4,7 @@
   "private": true,
   "exports": {
     "./Button": "./src/components/atoms/Button/index.tsx",
-    "./Logo": "./src/components/atoms/Logo/index.tsx",
-    "./Header": "./src/components/organisms/Header/index.tsx"
+    "./Logo": "./src/components/atoms/Logo/index.tsx"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
@@ -23,5 +22,8 @@
     "eslint": "^8.53.0",
     "react": "^18.2.0",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@storybook/react": "^7.5.3"
   }
 }

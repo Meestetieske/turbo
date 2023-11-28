@@ -3,7 +3,8 @@ import { tv } from "tailwind-variants";
 
 export type ButtonColor = "primary" | "secondary";
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   color?: ButtonColor;
 }
 
